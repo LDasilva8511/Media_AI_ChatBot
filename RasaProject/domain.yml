@@ -1,0 +1,568 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - pick_movie
+  - pick_genre
+  - inform_genre
+  - horror_genre
+  - thriller_genre
+  - comedy_genre
+  - science_fiction_genre
+  - action_genre
+  - crime_genre
+  - war_genre
+  - adventure_genre
+  - drama_genre
+  - horror_actor
+  - crime_actor
+  - comedy_actor
+  - adventure_actor
+  - war_actor
+  - thriller_actor
+  - science_fiction_actor
+  - drama_actor
+  - action_actor
+  - horrormovie_des
+  - thrillermovie_des
+  - actionmovie_des
+  - sciencefictionmovie_des
+  - warmovie_des
+  - crimemovie_des
+  - adventuremovie_des
+  - comedymovie_des
+  - dramamovie_des
+
+entities:
+  - genre
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_thanks:
+  - text: "You are welcome, it was my pleasure to help you"
+
+  utter_horror_genre:
+  - text: "Horror Movies: 
+Paranormal Activity, 
+ 
+The Descent,
+
+It Follows,
+
+The Witch,
+
+Get Out, 
+
+Psycho,
+
+Halloween,
+
+Scream,
+
+Jaws,
+
+The Shining, 
+
+The Thing,
+
+The Texas Chain Saw Massacre, 
+
+The Exorcist 
+"
+
+  utter_thriller_genre:
+  - text: "Thriller Movies:
+Psycho, 
+
+The Silence of the Lambs, 
+
+Se7en, 
+
+The Sixth Sense,
+
+Memento, 
+
+Oldboy,
+
+Zodiac, 
+
+Gone Gilr,
+
+Prisoners, 
+
+No Country for Old Men,
+
+Shutter Island,
+
+The Girl with the Dragon Tattoo, 
+
+Black Swan,
+
+The Prestige, 
+
+Inception,
+
+Heat Vertigo, 
+
+The Departed, 
+
+Seven Samurai, 
+"
+
+  utter_comedy_genre:
+  - text: "Comedy Movies: 
+Airplane, 
+
+Monty Python and the Holy Grail, 
+
+The Big Lebowski, 
+
+Anchorman, 
+
+Superbad, 
+
+The Hangover,
+
+Dumb and Dumber, 
+
+Groundhog Day, 
+
+Ferris Bueller's Day Off, 
+
+The Grand Pudapest Hotel, 
+
+Bridesmaids, 
+
+Ghostbusters, 
+
+The Princess Bride, 
+
+Shaun of the Dead, 
+
+The 40 Year Old Virgin, 
+
+Napolean Dynamite,
+
+Tropic Thunder, 
+
+Hot Fuzz, 
+
+Office Space, 
+
+The Producers 
+"
+
+  utter_action_genre:
+  - text: "Action Movies: 
+Die Hard,
+
+The Dark Knight, 
+
+Mad Max: Fury Road, 
+
+Terminator 2: Judgement Day, 
+
+The Matrix,
+
+Aliens, 
+
+John Wick, 
+
+Gladiator, 
+
+Inception, 
+
+Kill Bill: Volume 1, 
+
+The Bourne Identity, 
+
+Leon: The Professional, 
+
+Raiders of the Lost Ark, 
+
+The Terminator, 
+
+Speed, 
+
+Mission Impossible - Fallout,
+
+The Raid: Redeption,
+
+Die Hard with a Vengeance, 
+
+Crouching Tiger, Hiddren Dragon  
+"
+
+  utter_science_fiction_genre:
+  - text: "Science Fiction Movies: 
+Blade Runner,
+
+2001: A Space Odyssey,
+
+The Matrix,
+
+Star Wars: Episode IV - A New Hope,
+
+Inception,
+
+Alien,
+
+The Terminator,
+
+Jurassic Park,
+
+The Fifth Element,
+
+Avatar,
+
+E.T. the Extra-Terrestrial,
+
+Interstellar,
+
+The Day the Earth Stood Still,
+
+Back to the Future,
+
+Close Encounters of the Third Kind,
+
+The Martian,
+
+Arrival,
+
+District 9,
+
+The Hunger Games,
+
+Ex Machina
+"
+
+  utter_crime_genre:
+  - text: "Crime Movies: 
+The Godfather,
+
+Pulp Fiction,
+
+Goodfellas,
+
+The Shawshank Redemption,
+
+Heat,
+
+Scarface,
+
+The Departed,
+
+Reservoir Dogs,
+
+No Country for Old Men,
+
+The Silence of the Lambs,
+
+Drive,
+
+Casino,
+
+Training Day,
+
+Mystic River,
+
+City of God,
+
+L.A. Confidential,
+
+Fargo,
+
+The Usual Suspects,
+
+American Gangster,
+
+The French Connection
+"
+
+  utter_drama_genre:
+  - text: "Drama Movies: 
+Forrest Gump,
+
+The Shawshank Redemption,
+
+Schindler's List,
+
+The Godfather,
+
+Titanic,
+
+The Green Mile,
+
+A Beautiful Mind,
+
+The Pursuit of Happyness,
+
+The Social Network,
+
+The Pianist,
+
+The Truman Show,
+
+Gladiator,
+
+Saving Private Ryan,
+
+Braveheart,
+
+The Curious Case of Benjamin Button,
+
+The Lion King,
+
+Dead Poets Society,
+
+Cast Away,
+
+Atonement,
+
+Million Dollar Baby
+"
+
+  utter_adventure_genre:
+  - text: "Adventure Movies: 
+Raiders of the Lost Ark,
+
+Jurassic Park,
+
+Pirates of the Caribbean: The Curse of the Black Pearl,
+
+The Lord of the Rings: The Fellowship of the Ring,
+
+Indiana Jones and the Last Crusade,
+
+The Goonies,
+
+Avatar,
+
+The Princess Bride,
+
+Jumanji,
+
+The Mummy,
+
+National Treasure,
+
+Harry Potter and the Sorcerer's Stone,
+
+The Jungle Book,
+
+Into the Wild,
+
+The Hobbit: An Unexpected Journey,
+
+Finding Nemo,
+
+The Chronicles of Narnia: The Lion, the Witch and the Wardrobe,
+
+Up,
+
+Spirited Away,
+
+The Adventures of Tintin
+"
+  utter_war_genre:
+  - text: "War Movies: 
+Saving Private Ryan,
+
+Apocalypse Now,
+
+Dunkirk,
+
+Full Metal Jacket,
+
+Platoon,
+
+Schindler's List,
+
+Braveheart,
+
+Black Hawk Down,
+
+The Thin Red Line,
+
+Hacksaw Ridge,
+
+1917,
+
+Fury,
+
+Gladiator,
+
+The Hurt Locker,
+
+Pearl Harbor,
+
+Bridge on the River Kwai,
+
+Inglourious Basterds,
+
+Letters from Iwo Jima,
+
+We Were Soldiers,
+
+Enemy at the Gates
+"
+  utter_horror_actor:
+  - text: "Actors in the horror genre are:
+Jamie Lee Curtis,
+Vincent Price,
+Sigourney Weaver,
+Boris Karloff,
+Christopher Lee
+"
+
+  utter_thriller_actor:
+  - text: "Actors in the thriller genre are:
+Anthony Hopkins,
+Jodie Foster,
+Alfred Hitchcock,
+Harrison Ford,
+Michael Douglas
+"
+
+  utter_action_actor:
+  - text: "Actors in the action genre are:
+Arnold Schwarzenegger,
+Bruce Willis,
+Sylvester Stallone,
+Dwayne Johnson,
+Tom Cruise
+"
+
+  utter_science_fiction_actor:
+  - text: "Actors in the science fiction genre are:
+Harrison Ford,
+Sigourney Weaver,
+Keanu Reeves,
+Carrie Fisher,
+Tom Cruise
+"
+
+  utter_drama_actor:
+  - text: "Actors in the drama genre are:
+Meryl Streep,
+Tom Hanks,
+Leonardo DiCaprio,
+Cate Blanchett,
+Daniel Day-Lewis
+"
+
+  utter_comedy_actor:
+  - text: "Actors in the comedy genre are:
+Jim Carrey,
+Robin Williams,
+Eddie Murphy,
+Melissa McCarthy,
+Will Ferrell
+"
+
+  utter_war_actor:
+  - text: "Actors in the War genre are:
+Tom Hanks,
+Brad Pitt,
+Mel Gibson,
+Clint Eastwood,
+Matthew McConaughey
+"
+
+  utter_adventure_actor:
+  - text: "Actors in the adventure genre are:
+Harrison Ford,
+Tom Cruise,
+Johnny Depp,
+Angelina Jolie,
+Charlize Theron
+"
+
+  utter_crime_actor:
+  - text: "Actors in the crime genre are:
+Al Pacino,
+Robert De Niro,
+Leonardo DiCaprio,
+Denzel Washington,
+Morgan Freeman
+"
+
+  utter_horror_description:
+  - text: "horror :
+Horror is a genre designed to elicit fear, suspense, and discomfort in its audience. It often features elements of the supernatural, the macabre, or psychological terror. Horror stories typically involve protagonists confronting malevolent forces, whether they be monsters, ghosts, or human adversaries. The genre plays on primal fears, such as the fear of the unknown, death, or the loss of control. Atmosphere and tension-building are crucial in horror, as writers use setting, pacing, and imagery to create an atmosphere of dread and foreboding. Ultimately, horror aims to provoke strong emotional reactions, leaving a lasting impact on its audience long after the story has ended.
+"
+
+  utter_thriller_description:
+  - text: "Thriller :
+Thriller is a genre that aims to keep audiences on the edge of their seats with suspenseful and gripping narratives. It often features high stakes, intense action, and plot twists that keep readers or viewers guessing until the very end. Thrillers can encompass a wide range of subgenres, including psychological thrillers, crime thrillers, political thrillers, and supernatural thrillers, among others. These stories typically revolve around protagonists who find themselves in dangerous or life-threatening situations, facing off against formidable adversaries or navigating complex mysteries. Tension is a key element in thrillers, as writers skillfully build suspense through pacing, cliffhangers, and unexpected plot developments. Ultimately, thrillers aim to thrill and entertain, offering audiences an adrenaline-fueled ride full of twists, turns, and heart-pounding moments.
+"
+
+  utter_drama_description:
+  - text: "drama :
+Drama is a genre that delves into the complexities of human emotion, relationships, and societal issues. It often focuses on character development and interpersonal conflicts, showcasing the highs and lows of human experiences. Dramas can range from intense and emotionally gripping narratives to more subdued and introspective stories. Themes explored in dramas may include love, betrayal, ambition, redemption, and the struggle for identity. Through compelling storytelling and authentic portrayals of human struggles, dramas aim to evoke empathy, provoke thought, and offer insight into the human condition.
+"
+
+  utter_science_fiction_description:
+  - text: "sci-fi:
+Science fiction is a genre that explores imaginative and speculative concepts, often grounded in scientific principles or futuristic technology. It encompasses a wide range of narratives, from stories set in distant galaxies to speculative futures of our own world. Science fiction delves into themes such as space exploration, time travel, artificial intelligence, extraterrestrial life, and dystopian societies, among others.
+"
+
+  utter_action_description:
+  - text: "Action :
+Action is a genre known for its fast-paced excitement, thrilling sequences, and high-energy storytelling. It typically features protagonists engaged in daring feats, intense combat, and adrenaline-pumping pursuits. Action stories can span various settings and scenarios, including espionage, martial arts, heists, and epic battles. The genre often prioritizes spectacle and spectacle, with jaw-dropping stunts, explosive set pieces, and choreographed fight scenes designed to keep audiences engaged and entertained. While action is a primary focus, many action narratives also incorporate elements of adventure, suspense, and even romance to enrich the storyline. Ultimately, action serves as an exhilarating escape into a world of thrills, where heroes defy the odds and triumph over adversity through sheer determination and skill.
+"
+
+  utter_adventure_description:
+  - text: "adventure :
+The adventure genre encompasses stories filled with excitement, daring deeds, and often journeys into the unknown. It's characterized by protagonists embarking on quests or expeditions, facing various challenges and obstacles along the way. These challenges could range from physical dangers like treacherous terrain or adversaries to psychological hurdles such as moral dilemmas or personal growth. Adventure stories often feature exploration, discovery, and the thrill of overcoming adversity, offering readers a sense of escapism and the joy of vicarious adventure.
+"
+
+  utter_war_description:
+  - text: "war:
+The war genre encompasses stories set against the backdrop of armed conflict, exploring the experiences of soldiers, civilians, and societies affected by war. These narratives can cover a wide range of historical periods and conflicts, from ancient battles to modern warfare, and can focus on various aspects of war, including combat, strategy, politics, and the human cost of conflict. Often stories of recent wars are based on true stories. War stories have the power to educate, provoke thought, and evoke a range of emotions in audiences.
+"
+
+  utter_crime_description:
+  - text: "crime:
+Crime is a genre that revolves around criminal activities, investigations, and the pursuit of justice. It encompasses a wide range of narratives, including detective stories, police procedurals, heist thrillers, and legal dramas. Crime stories often feature complex plots, intriguing characters, and moral dilemmas as protagonists grapple with issues of right and wrong in the face of crime and corruption.
+"
+
+  utter_comedy_description:
+  - text: "Comedy : 
+Comedy is a genre dedicated to making audiences laugh and providing amusement through humor. Whether in literature, film, or theater, comedy aims to entertain by eliciting laughter and light-hearted enjoyment. Comedy often employs witty dialogue, clever wordplay, and situational humor to create comedic moments. It can range from slapstick and farce, which rely on physical gags and exaggerated situations, to satire and parody, which use humor to critique societal norms or conventions. Additionally, comedy may explore themes such as love, friendship, and the absurdities of everyday life, offering both entertainment and insight into the human condition. Overall, comedy serves as a refreshing break from the seriousness of life, inviting audiences to laugh along and embrace the joy of humor.
+"
+
+actions:
+  - action_extract_genre_entity
+  - action_pick_genre
+  - action_confirm_genre
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

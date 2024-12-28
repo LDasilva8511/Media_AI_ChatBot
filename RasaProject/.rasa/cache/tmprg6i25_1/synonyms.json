@@ -1,0 +1,11 @@
+{
+  "horror": "Horror",
+  "thriller": "Thriller",
+  "comedy": "Comedy",
+  "action": "Action",
+  "science fiction": "Science Fiction",
+  "crime": "Crime",
+  "drama": "Drama",
+  "adventure": "Adventure",
+  "war": "War"
+}

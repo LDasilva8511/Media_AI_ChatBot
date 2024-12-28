@@ -1,0 +1,268 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+
+- intent: pick_movie
+  examples: |
+    - Can I pick a [movie] (genre)
+    - I want to know about a [movie] (genre)
+    - Can I pick another [movie] (genre)
+
+- intent: pick_genre
+  examples: |
+    - Can I pick a genre
+    - Can I pick a movie genre
+    - I want to know about a movie genre
+    - Can I pick another genre
+
+- intent: inform_genre
+  examples: |
+    - [Horror](genre)
+    - [Thriller](genre)
+    - [Comedy](genre)
+    - [Action](genre)
+    - [Science Fiction](genre)
+    - [Crime](genre)
+    - [Drama](genre)
+    - [Adventure](genre)
+    - [War](genre)
+
+- intent: horror_genre
+  examples: |
+    - What movies are in the Horror genre
+    - Can you tell me what movies are in the horror genre
+
+- intent: thriller_genre
+  examples: |
+    - What movies are in the Thriller genre
+    - Can you tell me what movies are in the thriller genre
+
+- intent: comedy_genre
+  examples: |
+    - What movies are in the Comedy genre
+    - Can you tell me what movies are in the comedy genre
+
+- intent: action_genre
+  examples: |
+    - What movies are in the Action genre
+    - Can you tell me what movies are in the action genre
+
+- intent: science_fiction_genre
+  examples: |
+    - What movies are in the Science Fiction genre
+    - Can you tell me what movies are in the science fiction genre
+
+- intent: crime_genre
+  examples: |
+    - What movies are in the Crime genre
+    - Can you tell me what movies are in the crime genre
+
+- intent: drama_genre
+  examples: |
+    - What movies are in the Drama genre
+    - Can you tell me what movies are in the drama genre
+
+- intent: adventure_genre
+  examples: |
+    - What movies are in the Adventure genre
+    - Can you tell me what movies are in the adventure genre
+
+- intent: war_genre
+  examples: |
+    - What movies are in the War genre
+    - Can you tell me what movies are in the war genre
+
+- intent: horror_actor
+  examples: |
+    - What actors are in horror movies
+    - What are some famous actors in these horror movies
+
+- intent: thriller_actor
+  examples: |
+    - What actors are in thriller movies
+    - What are some famous actors in these thriller movies
+
+- intent: comedy_actor
+  examples: |
+    - What actors are in comedy movies
+    - What are some famous actors in these comedy movies
+
+- intent: science_fiction_actor
+  examples: |
+    - What actors are in science fiction movies
+    - What are some famous actors in these science fiction movies
+
+- intent: action_actor
+  examples: |
+    - What actors are in action movies
+    - What are some famous actors in these action movies
+
+- intent: adventure_actor
+  examples: |
+    - What actors are in adventure movies
+    - What are some famous actors in these adventure movies
+
+- intent: crime_actor
+  examples: |
+    - What actors are in crime movies
+    - What are some famous actors in these crime movies
+
+- intent: war_actor
+  examples: |
+    - What actors are in war movies
+    - What are some famous actors in these war movies
+
+- intent: drama_actor
+  examples: |
+    - What actors are in drama movies
+    - What are some famous actors in these drama movies
+
+- intent: horrormovie_des
+  examples: |
+    - Can you tell me about the horror genre
+    - Can you give me a description of the horror genre
+    - What can you tell me about the horror genre
+
+- intent: thrillermovie_des
+  examples: |
+    - Can you tell me about the thriller genre
+    - Can you give me a description of the thriller genre
+    - What can you tell me about the thriller genre
+
+- intent: actionmovie_des
+  examples: |
+    - Can you tell me about the action genre
+    - Can you give me a description of the action genre
+    - What can you tell me about the action genre
+
+- intent: sciencefictionmovie_des
+  examples: |
+    - Can you tell me about the science fiction genre
+    - Can you give me a description of the science fiction genre
+    - What can you tell me about the science fiction genre
+
+- intent: dramamovie_des
+  examples: |
+    - Can you tell me about the drama genre
+    - Can you give me a description of the drama genre
+    - What can you tell me about the drama genre
+
+- intent: warmovie_des
+  examples: |
+    - Can you tell me about the war genre
+    - Can you give me a description of the war genre
+    - What can you tell me about the war genre
+
+- intent: crimemovie_des
+  examples: |
+    - Can you tell me about the crime genre
+    - Can you give me a description of the crime genre
+    - What can you tell me about the crime genre
+
+- intent: adventuremovie_des
+  examples: |
+    - Can you tell me about the adventure genre
+    - Can you give me a description of the adventure genre
+    - What can you tell me about the adventure genre
+
+- intent: comedymovie_des
+  examples: |
+    - Can you tell me about the comedy genre
+    - Can you give me a description of the comedy genre
+    - What can you tell me about the comedy genre
+    
+    

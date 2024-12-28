@@ -1,0 +1,177 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: Express Thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: Pick movie
+  steps:
+  - intent: pick_genre
+  - action: action_pick_genre
+  - intent: inform_genre
+  - action: action_confirm_genre
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: movies horror
+  steps:
+  - intent: horror_genre
+  - action: utter_horror_genre
+
+- story: movies thriller
+  steps:
+  - intent: thriller_genre
+  - action: utter_thriller_genre
+
+- story: movies comedy
+  steps:
+  - intent: comedy_genre
+  - action: utter_comedy_genre
+
+- story: movies science fiction
+  steps:
+  - intent: science_fiction_genre
+  - action: utter_science_fiction_genre
+
+- story: movies action
+  steps:
+  - intent: action_genre
+  - action: utter_action_genre
+
+- story: movies crime
+  steps:
+  - intent: crime_genre
+  - action: utter_crime_genre
+
+- story: movies adventure
+  steps:
+  - intent: adventure_genre
+  - action: utter_adventure_genre
+
+- story: movies drama
+  steps:
+  - intent: drama_genre
+  - action: utter_drama_genre
+
+- story: movies war
+  steps:
+  - intent: war_genre
+  - action: utter_war_genre
+
+- story: horror actor
+  steps:
+  - intent: horror_actor
+  - action: utter_horror_actor
+
+- story: comedy actor
+  steps:
+  - intent: comedy_actor
+  - action: utter_comedy_actor
+
+- story: action actor
+  steps:
+  - intent: action_actor
+  - action: utter_action_actor
+
+- story: thriller actor
+  steps:
+  - intent: thriller_actor
+  - action: utter_thriller_actor
+
+- story: science fiction actor
+  steps:
+  - intent: science_fiction_actor
+  - action: utter_science_fiction_actor
+
+- story: war actor
+  steps:
+  - intent: war_actor
+  - action: utter_war_actor
+
+- story: crime actor
+  steps:
+  - intent: crime_actor
+  - action: utter_crime_actor
+
+- story: drama actor
+  steps:
+  - intent: drama_actor
+  - action: utter_drama_actor
+
+- story: adventure actor
+  steps:
+  - intent: adventure_actor
+  - action: utter_adventure_actor
+
+- story: horror description
+  steps:
+  - intent: horrormovie_des
+  - action: utter_horror_description
+
+- story: thriller description
+  steps:
+  - intent: thrillermovie_des
+  - action: utter_thriller_description
+
+- story: drama description
+  steps:
+  - intent: dramamovie_des
+  - action: utter_drama_description
+
+- story: comedy description
+  steps:
+  - intent: comedymovie_des
+  - action: utter_comedy_description
+
+- story: science fiction description
+  steps:
+  - intent: sciencefictionmovie_des
+  - action: utter_science_fiction_description
+
+- story: war description
+  steps:
+  - intent: warmovie_des
+  - action: utter_war_description
+
+- story: crime description
+  steps:
+  - intent: crimemovie_des
+  - action: utter_crime_description
+
+- story: action description
+  steps:
+  - intent: actionmovie_des
+  - action: utter_action_description
+
+- story: adventure description
+  steps:
+  - intent: adventuremovie_des
+  - action: utter_adventure_description
